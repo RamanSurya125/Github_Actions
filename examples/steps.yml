@@ -1,0 +1,14 @@
+steps:
+  - name: checkout code
+    uses: actions/checkout@v4
+
+  - name: Run tests
+    run: |
+      npm install
+      npm test
+
+#each job has steps
+#A step can be:
+#Run a shell command (run)
+#use a action (uses)
+

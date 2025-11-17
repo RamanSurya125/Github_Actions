@@ -1,0 +1,17 @@
+jobs:
+  build:
+    runs-on: ubuntu-latest 
+    steps:
+      ...
+  test:
+    runs-on: ubuntu-latest
+    needs: build
+
+
+#each workflow has one or more jobs. & jobs can run in parallel (by default)
+#And sequentially if you add : needs.
+#
+#ubuntu-latest : specifies that this job will execute on a Github-hosted 
+#runner with the latest ubuntu operating system.
+
+

@@ -1,0 +1,9 @@
+on:           #it triggers on every push or PR for CI/CD
+  push:
+    branches: [ main, develop]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:  #manual trigger
+  schedule:
+    - cron: "0 3 * * *"   #every day 9AM ITC
+
